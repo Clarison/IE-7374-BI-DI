@@ -16,10 +16,7 @@ CREATE TABLE dim_campaign (
     end_day INT
 );
 
-CREATE TABLE dim_manufacturer (
-    manufacturer_key INT PRIMARY KEY,
-    manufacturer_name VARCHAR(30)
-);
+
 
 
 CREATE TABLE dim_product (
@@ -41,14 +38,7 @@ CREATE TABLE dim_store (
     store_region VARCHAR(20)
 );
 
-CREATE TABLE dim_time (
-    time_key INT PRIMARY KEY,
-    day INT,
-    week INT,
-    month INT,
-    quarter INT,
-    year INT
-);
+
 
 CREATE TABLE dim_coupon (
     coupon_key BIGINT PRIMARY KEY,
